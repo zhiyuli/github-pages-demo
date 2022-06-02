@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>3. Autodocs &mdash; Github Pages Demo 0.0.1 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+    <link rel="shortcut icon" href="../_static/favico.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="4. nbsphinx" href="nbsphinx.html" />
+    <link rel="prev" title="2. Intro to RST" href="basic-rst.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> Github Pages Demo
+            <img src="../_static/favico.ico" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../tutorial.html">Tutorial</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="sphinx-quickstart.html">1. Sphinx-Quickstart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="basic-rst.html">2. Intro to RST</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">3. Autodocs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nbsphinx.html">4. nbsphinx</a></li>
+<li class="toctree-l2"><a class="reference internal" href="github-pages.html">5. Deploying to Github Pages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="advanced-topics.html">6. Advanced Topics</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../examples.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference.html">User Reference</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Github Pages Demo</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../tutorial.html">Tutorial</a> &raquo;</li>
+      <li><span class="section-number">3. </span>Autodocs</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/tutorial/autodocs.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast.container,
+.nboutput.nblast.container {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast.container + .nbinput.container {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+
+/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
+.math {
+    text-align: unset;
+}
+</style>
+<section id="autodocs">
+<h1><span class="section-number">3. </span>Autodocs<a class="headerlink" href="#autodocs" title="Permalink to this headline"></a></h1>
+<p>We will be using the <a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/extensions/napoleon.html">Napoleon</a> extension for Google strings.</p>
+<ol class="arabic">
+<li><p><strong>Docstrings</strong></p>
+<p>Let’s create and document a single function in <code class="docutils literal notranslate"><span class="pre">mycybergis/uiuc.py</span></code>.</p>
+<p>An example of Google docstrings:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Creates</span> <span class="ow">and</span> <span class="n">returns</span> <span class="n">a</span> <span class="n">folium</span><span class="o">.</span><span class="n">Map</span> <span class="n">instance</span> <span class="n">of</span> <span class="n">UIUC</span><span class="o">.</span>
+
+<span class="n">Args</span><span class="p">:</span>
+    <span class="n">center</span> <span class="p">(</span><span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">]):</span> <span class="n">the</span> <span class="n">lon</span><span class="p">,</span> <span class="n">lat</span> <span class="k">for</span> <span class="n">the</span> <span class="n">center</span> <span class="n">of</span> <span class="n">the</span> <span class="nb">map</span><span class="o">.</span>
+    <span class="n">zoom</span> <span class="p">(</span><span class="nb">int</span><span class="p">):</span> <span class="n">the</span> <span class="n">starting</span> <span class="n">level</span> <span class="n">of</span> <span class="n">zoom</span><span class="o">.</span>
+
+<span class="n">Returns</span><span class="p">:</span>
+    <span class="n">folium</span><span class="o">.</span><span class="n">Map</span> <span class="n">showing</span> <span class="n">UIUC</span>
+</pre></div>
+</div>
+<p>Create a basic function in the file and document it. If you can’t think of anything, go super simple like <code class="docutils literal notranslate"><span class="pre">add_two(number:</span> <span class="pre">int)</span></code> which takes a number and returns the number plus two.</p>
+</li>
+<li><p><strong>Creating Autodocs with Autodoc and Napoleon</strong></p>
+<p>Now that we have our docstrings, we need to figure out how to generate documentation from it. Create a new page (“reference.rst”) in the <code class="docutils literal notranslate"><span class="pre">docs/</span></code> and copy/paste the following into it:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">User</span> <span class="n">Reference</span>
+<span class="o">==============</span>
+
+<span class="n">User</span> <span class="n">reference</span> <span class="k">for</span> <span class="n">mycybergis</span> <span class="n">package</span><span class="o">.</span>
+
+<span class="n">mycybergis</span><span class="o">.</span><span class="n">uiuc</span> <span class="n">module</span>
+<span class="o">----------------------</span>
+
+<span class="o">..</span> <span class="n">automodule</span><span class="p">::</span> <span class="n">mycybergis</span><span class="o">.</span><span class="n">uiuc</span>
+    <span class="p">:</span><span class="n">members</span><span class="p">:</span>
+</pre></div>
+</div>
+<p>Let’s break this down:</p>
+<ul class="simple">
+<li><p>The heading of the page is “User Reference”</p></li>
+<li><p>A short textual description</p></li>
+<li><p>A subheading for the module within our package</p></li>
+<li><p>The <a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/extensions/autodoc.html#directives">autodoc directive</a> tells us to document the module <code class="docutils literal notranslate"><span class="pre">mycybergis.uiuc</span></code> and all of it’s members (<code class="docutils literal notranslate"><span class="pre">:members:</span></code>).</p></li>
+</ul>
+</li>
+<li><p><strong>Add reference.rst to your TOC tree</strong></p>
+<p>Your toc tree on index.rst should include reference.rst:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">toctree</span><span class="p">::</span>
+    <span class="p">:</span><span class="n">maxdepth</span><span class="p">:</span> <span class="mi">2</span>
+    <span class="p">:</span><span class="n">caption</span><span class="p">:</span> <span class="n">Contents</span><span class="p">:</span>
+
+    <span class="n">tutorial</span>
+    <span class="n">reference</span>
+</pre></div>
+</div>
+</li>
+<li><p><strong>Make HTML</strong></p>
+<p>Run <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">html</span></code> in <code class="docutils literal notranslate"><span class="pre">docs/</span></code> and check the result! See if you can debug any formatting issues that come up!</p>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>One of the docstrings already in uiuc.py is intentially messed up so that it renders incorrectly. See if you can fix it.</p>
+</div>
+</li>
+</ol>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="basic-rst.html" class="btn btn-neutral float-left" title="2. Intro to RST" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="nbsphinx.html" class="btn btn-neutral float-right" title="4. nbsphinx" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Alexander Michels.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
