@@ -7,7 +7,6 @@ from typing import List
 def get_uiuc_polygon() -> Polygon:
     """
     Returns a shapely.geometry.Polygon surrounding UIUC.
-
     Returns:
         shapely.geometry.Polygon representing UIUC
 
