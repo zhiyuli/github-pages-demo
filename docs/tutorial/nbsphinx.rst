@@ -3,7 +3,7 @@ nbsphinx
 
 Often we create Jupyter Notebooks to demo the usage of our software and it's convenient for those notebooks to serve as examples on our sites. For example, `Geopandas example gallery does this <https://geopandas.org/en/stable/gallery/index.html>`_ (`see their conf.py <https://github.com/geopandas/geopandas/blob/460d9403a0942e67b3f4f5e73aa7589febef84b3/doc/source/conf.py>`_). This can be done with `nbsphinx <https://nbsphinx.readthedocs.io/en/0.8.8/>`_
 
-#. **Notebooks within ``docs/``**
+#. **Notebooks within** ``docs/``
 
    When a notebook is within docs, you just have to add it's path to the toc tree or use ``:glob:`` like `in the Geopandas gallery <https://github.com/geopandas/geopandas/blob/460d9403a0942e67b3f4f5e73aa7589febef84b3/doc/source/gallery/index.rst>`_. A glob directive works like globs in Bash terminals (``ls *``).
 
@@ -37,10 +37,20 @@ Often we create Jupyter Notebooks to demo the usage of our software and it's con
         ========
 
         .. toctree::
-        :maxdepth: 2
+            :maxdepth: 2
 
-        notebooks/Test
+            notebooks/Test
 
 #. **Make HTML and Check it Out**
 
    In the terminal, from ``docs/`` run the ``make html`` command and check out the results.
+
+
+.. tip::
+
+    To see the widgets in your notebooks, you want to go "Settings" and select "Save Widget State Automatically". 
+
+
+.. figure:: ../_static/img/SaveWidgetStateAutomatically.png
+
+    Saving the widget state in JupyterLab

@@ -19,6 +19,8 @@ We will be using the `Napoleon <https://www.sphinx-doc.org/en/master/usage/exten
         Returns:
             folium.Map showing UIUC
 
+   Create a basic function in the file and document it. If you can't think of anything, go super simple like ``add_two(number: int)`` which takes a number and returns the number plus two.
+
 #. **Creating Autodocs with Autodoc and Napoleon**
 
    Now that we have our docstrings, we need to figure out how to generate documentation from it. Create a new page ("reference.rst") in the ``docs/`` and copy/paste the following into it::
@@ -55,3 +57,8 @@ We will be using the `Napoleon <https://www.sphinx-doc.org/en/master/usage/exten
 #. **Make HTML**
 
    Run ``make html`` in ``docs/`` and check the result! See if you can debug any formatting issues that come up!
+
+
+   .. hint::
+
+     One of the docstrings already in uiuc.py is intentially messed up so that it renders incorrectly. See if you can fix it.

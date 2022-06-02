@@ -3,7 +3,7 @@ name: Sphinx build
 on: push
 
 jobs:
-sphinx-build:
+  sphinx-build:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
