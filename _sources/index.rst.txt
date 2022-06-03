@@ -3,8 +3,18 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Tutorial on Creating Github Pages for Code
-==========================================
+Creating Github Pages for Code
+==============================
+
+|SphinxBuild| |Deploy|
+
+.. |SphinxBuild| image:: https://github.com/cybergis/github-pages-demo/actions/workflows/SphinxBuild.yml/badge.svg
+    :target: https://github.com/cybergis/github-pages-demo/actions/workflows/SphinxBuild.yml
+
+.. |Deploy| image:: https://github.com/cybergis/github-pages-demo/actions/workflows/pages/pages-build-deployment/badge.svg
+    :target: https://github.com/cybergis/github-pages-demo/actions/workflows/pages/pages-build-deployment
+
+**Author:** `Alexander Michels <https://alexandermichels.github.io/>`_
 
 It's increasingly common for software and projects to have documentation sites with auto-generated docs and/or examples using Jupyter notebooks. Some examples include:
 
@@ -14,7 +24,7 @@ It's increasingly common for software and projects to have documentation sites w
 Some `CyberGIS Center <https://cybergis.illinois.edu/>`_ projects with sites include:
 
 * `cybergisx-cli <https://cybergis.github.io/cybergisx-cli/>`_ (made with `MkDocs <https://www.mkdocs.org/>`_)
-* `cybergis-compute-python-skd <https://cybergis.github.io/cybergis-compute-python-sdk/>`_ (made with `Sphinx <https://www.sphinx-doc.org/en/master/>`_)
+* `cybergis-compute-python-sdk <https://cybergis.github.io/cybergis-compute-python-sdk/>`_ (made with `Sphinx <https://www.sphinx-doc.org/en/master/>`_)
 
 This site has the goal of walking through how to create one of these sites with Sphinx. At the end of the tutorial, you could end up with the `Examples page <examples.html>`_ and `User Reference page <reference.html>`_.
 
