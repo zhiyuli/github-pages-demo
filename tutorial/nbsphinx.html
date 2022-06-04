@@ -110,6 +110,15 @@
 <ol class="arabic">
 <li><p><strong>Notebooks within</strong> <code class="docutils literal notranslate"><span class="pre">docs/</span></code></p>
 <p>When a notebook is within docs, you just have to add it’s path to the toc tree or use <code class="docutils literal notranslate"><span class="pre">:glob:</span></code> like <a class="reference external" href="https://github.com/geopandas/geopandas/blob/460d9403a0942e67b3f4f5e73aa7589febef84b3/doc/source/gallery/index.rst">in the Geopandas gallery</a>. A glob directive works like globs in Bash terminals (<code class="docutils literal notranslate"><span class="pre">ls</span> <span class="pre">*</span></code>).</p>
+<p>A “regular” toctree command would look just like if we added a new page. A glob directive might look like:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">nbgallery</span><span class="p">::</span>
+    <span class="p">:</span><span class="n">name</span><span class="p">:</span> <span class="n">nbshpinx</span><span class="o">-</span><span class="n">gallery</span>
+    <span class="p">:</span><span class="n">glob</span><span class="p">:</span>
+
+    <span class="o">./*</span>
+</pre></div>
+</div>
+<p>This example is from the <a class="reference external" href="https://github.com/geopandas/geopandas/blob/460d9403a0942e67b3f4f5e73aa7589febef84b3/doc/source/gallery/index.rst">geopandas gallery index.rst</a>.</p>
 </li>
 <li><p><strong>Notebooks Elsewhere</strong></p>
 <p>We will spend more time talking about including notebooks which are somewhere other than within <code class="docutils literal notranslate"><span class="pre">docs/</span></code>. You can’t just use “../” because the file must reside within your docs folder, but this can be done with <a class="reference external" href="https://github.com/vidartf/nbsphinx-link">nbsphinx-link</a>.</p>

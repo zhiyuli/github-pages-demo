@@ -103,12 +103,12 @@
     <span class="k">return</span> <span class="n">gpd</span><span class="o">.</span><span class="n">GeoDataFrame</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">crs</span><span class="o">=</span><span class="s1">&#39;epsg:4326&#39;</span><span class="p">,</span> <span class="n">geometry</span><span class="o">=</span><span class="p">[</span><span class="n">get_uiuc_polygon</span><span class="p">()])</span></div>
 
 
-<div class="viewcode-block" id="get_map_of_uiuc"><a class="viewcode-back" href="../../reference.html#mycybergis.uiuc.get_map_of_uiuc">[docs]</a><span class="k">def</span> <span class="nf">get_map_of_uiuc</span><span class="p">(</span><span class="n">center</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="mf">40.098</span><span class="p">,</span> <span class="o">-</span><span class="mf">88.219</span><span class="p">],</span> <span class="n">zoom</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">11</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">folium</span><span class="o">.</span><span class="n">Map</span><span class="p">:</span>
+<div class="viewcode-block" id="get_map_of_uiuc"><a class="viewcode-back" href="../../reference.html#mycybergis.uiuc.get_map_of_uiuc">[docs]</a><span class="k">def</span> <span class="nf">get_map_of_uiuc</span><span class="p">(</span><span class="n">center</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">float</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="mf">40.098</span><span class="p">,</span> <span class="o">-</span><span class="mf">88.219</span><span class="p">],</span> <span class="n">zoom</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">11</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">folium</span><span class="o">.</span><span class="n">Map</span><span class="p">:</span>
     <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Creates and returns a folium.Map instance of UIUC.</span>
 
 <span class="sd">    Args:</span>
-<span class="sd">        center (List[int]): the lon, lat for the center of the map.</span>
+<span class="sd">        center (List[float]): the lon, lat for the center of the map.</span>
 <span class="sd">        zoom (int): the starting level of zoom.</span>
 
 <span class="sd">    Returns:</span>
