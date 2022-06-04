@@ -115,46 +115,56 @@
 <li><p><strong>Fork and clone the repo</strong> The repository for this work is <a class="reference external" href="https://github.com/cybergis/github-pages-demo">https://github.com/cybergis/github-pages-demo</a>. Fork it on Github and clone the fork to your laptop. <strong>It is important that you fork it because later we will be deploying a page with Github Pages.</strong></p></li>
 </ol>
 <p>Open a terminal and change directories to where you want to do this work:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="o">&lt;</span><span class="n">some</span> <span class="n">path</span><span class="o">&gt;</span>
+<blockquote>
+<div><div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">cd &lt;some path&gt;</span>
 </pre></div>
 </div>
+</div></blockquote>
 <p>Clone the repository and checkout the <code class="docutils literal notranslate"><span class="pre">main</span></code> branch:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">cybergis</span><span class="o">/</span>
+<blockquote>
+<div><div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">&gt; git clone https://github.com/cybergis/</span>
 
-<span class="n">github</span><span class="o">-</span><span class="n">pages</span><span class="o">-</span><span class="n">demo</span>
-<span class="n">Cloning</span> <span class="n">into</span> <span class="s1">&#39;github-pages-demo&#39;</span><span class="o">...</span>
-<span class="n">remote</span><span class="p">:</span> <span class="n">Enumerating</span> <span class="n">objects</span><span class="p">:</span> <span class="mi">41</span><span class="p">,</span> <span class="n">done</span><span class="o">.</span>
-<span class="n">remote</span><span class="p">:</span> <span class="n">Counting</span> <span class="n">objects</span><span class="p">:</span> <span class="mi">100</span><span class="o">%</span> <span class="p">(</span><span class="mi">41</span><span class="o">/</span><span class="mi">41</span><span class="p">),</span> <span class="n">done</span><span class="o">.</span>
-<span class="n">remote</span><span class="p">:</span> <span class="n">Compressing</span> <span class="n">objects</span><span class="p">:</span> <span class="mi">100</span><span class="o">%</span> <span class="p">(</span><span class="mi">32</span><span class="o">/</span><span class="mi">32</span><span class="p">),</span> <span class="n">done</span><span class="o">.</span>
-<span class="n">remote</span><span class="p">:</span> <span class="n">Total</span> <span class="mi">41</span> <span class="p">(</span><span class="n">delta</span> <span class="mi">3</span><span class="p">),</span> <span class="n">reused</span> <span class="mi">41</span> <span class="p">(</span><span class="n">delta</span> <span class="mi">3</span><span class="p">),</span> <span class="n">pack</span><span class="o">-</span><span class="n">reused</span> <span class="mi">0</span>
-<span class="n">Unpacking</span> <span class="n">objects</span><span class="p">:</span> <span class="mi">100</span><span class="o">%</span> <span class="p">(</span><span class="mi">41</span><span class="o">/</span><span class="mi">41</span><span class="p">),</span> <span class="mf">255.51</span> <span class="n">KiB</span> <span class="o">|</span> <span class="mf">1.84</span> <span class="n">MiB</span><span class="o">/</span><span class="n">s</span><span class="p">,</span> <span class="n">done</span><span class="o">.</span>
+<span class="go">github-pages-demo</span>
+<span class="go">Cloning into &#39;github-pages-demo&#39;...</span>
+<span class="go">remote: Enumerating objects: 41, done.</span>
+<span class="go">remote: Counting objects: 100% (41/41), done.</span>
+<span class="go">remote: Compressing objects: 100% (32/32), done.</span>
+<span class="go">remote: Total 41 (delta 3), reused 41 (delta 3), pack-reused 0</span>
+<span class="go">Unpacking objects: 100% (41/41), 255.51 KiB | 1.84 MiB/s, done.</span>
 
-<span class="o">&gt;</span> <span class="n">cd</span> <span class="n">github</span><span class="o">-</span><span class="n">pages</span><span class="o">-</span><span class="n">demo</span><span class="o">/</span>
-<span class="o">&gt;</span> <span class="n">git</span> <span class="n">checkout</span> <span class="n">main</span>
+<span class="go">&gt; cd github-pages-demo/</span>
+<span class="go">&gt; git checkout main</span>
 
-<span class="n">ranch</span> <span class="s1">&#39;main&#39;</span> <span class="nb">set</span> <span class="n">up</span> <span class="n">to</span> <span class="n">track</span> <span class="n">remote</span> <span class="n">branch</span> <span class="s1">&#39;main&#39;</span> <span class="kn">from</span> <span class="s1">&#39;origin&#39;</span><span class="o">.</span>
-<span class="n">Switched</span> <span class="n">to</span> <span class="n">a</span> <span class="n">new</span> <span class="n">branch</span> <span class="s1">&#39;main&#39;</span>
+<span class="go">Switched to branch &#39;main&#39;</span>
+<span class="go">Your branch is up to date with &#39;origin/main&#39;.</span>
 </pre></div>
 </div>
+</div></blockquote>
 <ol class="arabic simple" start="2">
 <li><p><strong>`sphinx-quickstart`</strong></p></li>
 </ol>
 <p>Create a folder <code class="docutils literal notranslate"><span class="pre">docs</span></code> within the <code class="docutils literal notranslate"><span class="pre">github-pages-demo</span></code> folder:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="n">mkdir</span> <span class="n">docs</span>
+<blockquote>
+<div><div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">&gt; mkdir docs</span>
 </pre></div>
 </div>
+</div></blockquote>
 <p>Run the <code class="docutils literal notranslate"><span class="pre">sphinx-quickstart</span></code> command:</p>
 <blockquote>
-<div><p>&gt; sphinx-quickstart</p>
-</div></blockquote>
-<p>The answers to the questions are (or see screenshot below):</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="n">Separate</span> <span class="n">source</span> <span class="ow">and</span> <span class="n">build</span> <span class="n">directories</span> <span class="p">(</span><span class="n">y</span><span class="o">/</span><span class="n">n</span><span class="p">)</span> <span class="p">[</span><span class="n">n</span><span class="p">]:</span> <span class="n">n</span>
-<span class="o">&gt;</span> <span class="n">Project</span> <span class="n">name</span><span class="p">:</span> <span class="o">&lt;</span><span class="n">whatever</span> <span class="n">name</span> <span class="n">you</span> <span class="n">want</span><span class="o">&gt;</span>
-<span class="o">&gt;</span> <span class="n">Author</span> <span class="n">name</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="o">&lt;</span><span class="n">your</span> <span class="n">name</span><span class="o">&gt;</span>
-<span class="o">&gt;</span> <span class="n">Project</span> <span class="n">release</span> <span class="p">[]:</span> <span class="o">&lt;</span><span class="n">whatever</span> <span class="n">version</span> <span class="n">you</span> <span class="n">want</span><span class="o">&gt;</span>
-<span class="o">&gt;</span> <span class="n">Project</span> <span class="n">language</span> <span class="p">[</span><span class="n">en</span><span class="p">]:</span> <span class="n">en</span> <span class="p">(</span><span class="ow">or</span> <span class="n">the</span> <span class="n">language</span> <span class="n">of</span> <span class="n">your</span> <span class="n">choice</span><span class="p">,</span> <span class="n">but</span> <span class="n">we</span> <span class="n">will</span> <span class="n">use</span> <span class="n">English</span><span class="p">)</span>
+<div><div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">&gt; sphinx-quickstart</span>
 </pre></div>
 </div>
+</div></blockquote>
+<p>The answers to the questions are (or see screenshot below):</p>
+<blockquote>
+<div><div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">&gt; Separate source and build directories (y/n) [n]: n</span>
+<span class="go">&gt; Project name: &lt;whatever name you want&gt;</span>
+<span class="go">&gt; Author name(s): &lt;your name&gt;</span>
+<span class="go">&gt; Project release []: &lt;whatever version you want&gt;</span>
+<span class="go">&gt; Project language [en]: en (or the language of your choice, but we will use English)</span>
+</pre></div>
+</div>
+</div></blockquote>
 <figure class="align-default" id="id1">
 <img alt="../_images/SphinxQuickstart.png" src="../_images/SphinxQuickstart.png" />
 <figcaption>
@@ -178,17 +188,21 @@ Create a file called “requirements.txt” in <cite>docs/</cite> and copy/paste
 </pre></div>
 </div>
 <p>Once you have this file, install the packages with pip:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="n">pip</span> <span class="n">install</span> <span class="o">-</span><span class="n">r</span> <span class="n">requirements</span><span class="o">.</span><span class="n">txt</span>
+<blockquote>
+<div><div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">&gt; pip install -r requirements.txt</span>
 </pre></div>
 </div>
+</div></blockquote>
 <p><strong>NOTE: Make or move `requirements.txt` to `docs/`</strong> This will be necessary later.</p>
 <ol class="arabic simple" start="4">
 <li><p><strong>`make html`</strong></p></li>
 </ol>
 <p>Now, we are going to make the HTML output for the <cite>sphinx-quickstart</cite> output. From within <cite>docs/</cite>:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="n">make</span> <span class="n">html</span>
+<blockquote>
+<div><div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">&gt; make html</span>
 </pre></div>
 </div>
+</div></blockquote>
 <p>You can see a screenshot of the output below:</p>
 <figure class="align-default" id="id2">
 <img alt="../_images/MakeHtml.png" src="../_images/MakeHtml.png" />
