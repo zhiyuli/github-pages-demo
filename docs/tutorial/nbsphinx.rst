@@ -7,6 +7,16 @@ Often we create Jupyter Notebooks to demo the usage of our software and it's con
 
    When a notebook is within docs, you just have to add it's path to the toc tree or use ``:glob:`` like `in the Geopandas gallery <https://github.com/geopandas/geopandas/blob/460d9403a0942e67b3f4f5e73aa7589febef84b3/doc/source/gallery/index.rst>`_. A glob directive works like globs in Bash terminals (``ls *``).
 
+   A "regular" toctree command would look just like if we added a new page. A glob directive might look like::
+
+        .. nbgallery::
+            :name: nbshpinx-gallery
+            :glob:
+
+            ./*
+    
+   This example is from the `geopandas gallery index.rst <https://github.com/geopandas/geopandas/blob/460d9403a0942e67b3f4f5e73aa7589febef84b3/doc/source/gallery/index.rst>`_.
+
 #. **Notebooks Elsewhere**
 
    We will spend more time talking about including notebooks which are somewhere other than within ``docs/``. You can't just use "../" because the file must reside within your docs folder, but this can be done with `nbsphinx-link <https://github.com/vidartf/nbsphinx-link>`_.
@@ -16,6 +26,7 @@ Often we create Jupyter Notebooks to demo the usage of our software and it's con
         {
             "path": "relative/path/to/notebook"
         }
+
 
 #. **Getting Test.ipynb in our Site**
 

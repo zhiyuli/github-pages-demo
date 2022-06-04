@@ -35,7 +35,7 @@ Sphinx can use markdown and ReSTructured Text. We will focus on ReSTructured tex
             :maxdepth: 2
             :caption: Contents:
 
-   This is a toc (table of contents) tree directive. It links to other pages and defines the tree of pages within your site. `See the Sphinx "Directives" page for more info <https://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html>`_ 
+   This is a toc (table of contents) tree directive. It links to other pages and defines the tree of pages within your site. `See the Sphinx "Directives" page for more info <https://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html>`_. If you want to add pages to your site, you add them to a toctree somewhere.
 
 
 #. **Adding a Page**
@@ -45,7 +45,7 @@ Sphinx can use markdown and ReSTructured Text. We will focus on ReSTructured tex
         Test
         ====
     
-   Into it and then run ``make html``. What happens?
+   into it and then run ``make html``. What happens?
 
    .. raw:: html
 
@@ -65,10 +65,10 @@ Sphinx can use markdown and ReSTructured Text. We will focus on ReSTructured tex
         ======================================
 
         .. toctree::
-        :maxdepth: 2
-        :caption: Contents:
-        
-        test
+            :maxdepth: 2
+            :caption: Contents:
+            
+            test
 
 
 

@@ -32,12 +32,12 @@ def get_uiuc_gdf() -> gpd.GeoDataFrame:
     return gpd.GeoDataFrame(index=[0], crs='epsg:4326', geometry=[get_uiuc_polygon()])
 
 
-def get_map_of_uiuc(center: List[int] = [40.098, -88.219], zoom: int = 11) -> folium.Map:
+def get_map_of_uiuc(center: List[float] = [40.098, -88.219], zoom: int = 11) -> folium.Map:
     """
     Creates and returns a folium.Map instance of UIUC.
 
     Args:
-        center (List[int]): the lon, lat for the center of the map.
+        center (List[float]): the lon, lat for the center of the map.
         zoom (int): the starting level of zoom.
 
     Returns:

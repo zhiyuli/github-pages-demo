@@ -109,7 +109,7 @@ Now, let's check out the result. In the file browser, go to ``github-pages-demo 
 
    A screenshot of the HTML output
 
-5. **A few changes to `conf.py`**
+5. **A few changes to conf.py**
 
 Now, there are a few key changes we are going to make to the conf.py file. In the file browser, find "conf.py" at the path: github-pages-demo/docs/conf.py. We are going to make a couple key changes. 
 
@@ -168,7 +168,7 @@ For fun, you can download a logo image into the ``docs/_static`` folder and add 
 to your conf.py. This isn't necessary though. Save these changes.
 
 
-6. **`make html`: Part 2**
+6. **make html: Part 2**
 
 Go back to the terminal (and if needed change directories to our docs folder `cd github-pages-demo/docs`). Run the `make html` command again. Now, checkout your index.html file again:
 
