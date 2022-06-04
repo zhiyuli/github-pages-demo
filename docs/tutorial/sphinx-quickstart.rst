@@ -8,53 +8,59 @@ First, we are going to setup the basics with the ``sphinx-quickstart`` command. 
 
 1. **Fork and clone the repo** The repository for this work is `https://github.com/cybergis/github-pages-demo <https://github.com/cybergis/github-pages-demo>`_. Fork it on Github and clone the fork to your laptop. **It is important that you fork it because later we will be deploying a page with Github Pages.**
    
-Open a terminal and change directories to where you want to do this work::
+Open a terminal and change directories to where you want to do this work:
 
-   cd <some path>
+   .. code-block:: console
+
+        cd <some path>
 
 
-Clone the repository and checkout the ``main`` branch::
+Clone the repository and checkout the ``main`` branch:
 
+   .. code-block:: console
 
-    > git clone https://github.com/cybergis/
+        > git clone https://github.com/cybergis/
 
-    github-pages-demo
-    Cloning into 'github-pages-demo'...
-    remote: Enumerating objects: 41, done.
-    remote: Counting objects: 100% (41/41), done.
-    remote: Compressing objects: 100% (32/32), done.
-    remote: Total 41 (delta 3), reused 41 (delta 3), pack-reused 0
-    Unpacking objects: 100% (41/41), 255.51 KiB | 1.84 MiB/s, done.
+        github-pages-demo
+        Cloning into 'github-pages-demo'...
+        remote: Enumerating objects: 41, done.
+        remote: Counting objects: 100% (41/41), done.
+        remote: Compressing objects: 100% (32/32), done.
+        remote: Total 41 (delta 3), reused 41 (delta 3), pack-reused 0
+        Unpacking objects: 100% (41/41), 255.51 KiB | 1.84 MiB/s, done.
 
-    > cd github-pages-demo/
-    > git checkout main
+        > cd github-pages-demo/
+        > git checkout main
 
-    ranch 'main' set up to track remote branch 'main' from 'origin'.
-    Switched to a new branch 'main'
+        Switched to branch 'main'
+        Your branch is up to date with 'origin/main'.
 
 
 2. **`sphinx-quickstart`**
 
-Create a folder ``docs`` within the ``github-pages-demo`` folder::
+Create a folder ``docs`` within the ``github-pages-demo`` folder:
 
+   .. code-block:: console
 
-    > mkdir docs
+        > mkdir docs
 
 
 Run the ``sphinx-quickstart`` command:
 
+   .. code-block:: console
 
-    > sphinx-quickstart
-
-
-The answers to the questions are (or see screenshot below)::
+        > sphinx-quickstart
 
 
-    > Separate source and build directories (y/n) [n]: n
-    > Project name: <whatever name you want>
-    > Author name(s): <your name>
-    > Project release []: <whatever version you want>
-    > Project language [en]: en (or the language of your choice, but we will use English)
+The answers to the questions are (or see screenshot below):
+
+   .. code-block:: console
+
+        > Separate source and build directories (y/n) [n]: n
+        > Project name: <whatever name you want>
+        > Author name(s): <your name>
+        > Project release []: <whatever version you want>
+        > Project language [en]: en (or the language of your choice, but we will use English)
 
 
 
@@ -80,20 +86,22 @@ Create a file called "requirements.txt" in `docs/` and copy/paste the following:
     sphinx-rtd-theme
 
 
-Once you have this file, install the packages with pip::
+Once you have this file, install the packages with pip:
 
+   .. code-block:: console
 
-    > pip install -r requirements.txt
+        > pip install -r requirements.txt
 
 
 **NOTE: Make or move `requirements.txt` to `docs/`** This will be necessary later.
 
 4. **`make html`**
 
-Now, we are going to make the HTML output for the `sphinx-quickstart` output. From within `docs/`::
+Now, we are going to make the HTML output for the `sphinx-quickstart` output. From within `docs/`:
 
+   .. code-block:: console
 
-    > make html
+        > make html
 
 
 You can see a screenshot of the output below:
